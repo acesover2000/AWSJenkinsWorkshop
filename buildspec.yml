@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-        - python -m pip install Flask
+        - python -m pip install Flask --global http.sslVerify false
   build:
     commands:
       - echo Build started on `date`
